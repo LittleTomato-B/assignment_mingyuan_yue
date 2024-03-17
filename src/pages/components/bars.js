@@ -25,7 +25,7 @@ function Bars({ data, xScale, yScale, height, hoveredStation, onHover }) {
 
     return (
         <g className="bars">
-            {data.map((d, index) => (
+            {data?.map((d, index) => (
                 <rect
                     key={index}
                     x={xScale(d.station)}

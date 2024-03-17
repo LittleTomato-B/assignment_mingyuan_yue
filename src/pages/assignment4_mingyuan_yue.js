@@ -67,7 +67,7 @@ const Charts = () => {
 //Hint: use d3.scaleBand for xScaleBar
     // Define scales for the bar chart
     const xScaleBar = d3.scaleBand()
-    .domain(data.map(d => d.station).reverse())
+    .domain(data?.map(d => d.station).reverse())
     .range([0, innerWidth])
     
     const yScaleBar = d3.scaleLinear()

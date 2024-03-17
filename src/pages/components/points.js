@@ -25,7 +25,7 @@ function Points({ data, xScale, yScale, hoveredStation, onHover, onTooltipChange
     return (
         <g>
             {/* Draw all points */}
-            {data.map((d, i) => (
+            {data?.map((d, i) => (
                 <circle
                     key={i}
                     cx={xScale(d.tripdurationS)}
